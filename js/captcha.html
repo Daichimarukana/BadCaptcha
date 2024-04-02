@@ -1,0 +1,166 @@
+<div class="intCaptcha_trybox">
+    <div class="flexbox">
+        <div class="leftzone">
+            <div class="chk"></div>
+            <div id="click">
+                <h1>私は人間です。</h1>
+                <p>クリックしてください。</p>
+            </div>
+        </div>
+        <div class="rightzone">
+            <div class="logo">
+                <img src="/img/logo.png">
+            </div>
+            <h1>BadCaptcha</h1>
+            <div class="flexbox">
+                <a href="https://intcaptcha.daichimarukana.com/terms">利用規約</a>
+                <a href="https://intcaptcha.daichimarukana.com/privacypolicy">プライバシー</a>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .intCaptcha_trybox{
+        width: 320px;
+        height: 84px;
+        background-color: #fcfcfc;
+        border: solid 1px #f1f1f1;
+        border-radius: 10px;
+    }
+    .intCaptcha_trybox .flexbox p{
+        margin: 0px;
+        text-align: left;
+        font-size: 12px;
+        font-weight: normal;
+        font-family: "Yu Gothic UI","YuGothic",sans-serif;
+        color: #333333;
+    }
+    .intCaptcha_trybox .flexbox .main_check{
+        width: 100%;
+    }
+    .intCaptcha_trybox .flexbox .query{
+        display: flex;
+        width: 100%;
+    }
+    .intCaptcha_trybox .flexbox .query button{
+        margin: 6px auto;
+        width: 48px;
+        height: 32px;
+        border: none;
+        border-radius: 6px;
+        transition: all 250ms ease-out;
+        cursor: pointer;
+    }
+    .intCaptcha_trybox .flexbox .query button:hover{
+        filter: saturate(150%);
+    }
+    .intCaptcha_trybox .flexbox{
+        margin: 12px;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        transition: all 250ms ease-out;
+    }
+    .intCaptcha_trybox .flexbox .leftzone{
+        margin: 0;
+        margin-right: auto;
+        height: fit-content;
+        display: flex;
+        cursor: pointer;
+    }
+    .intCaptcha_trybox .flexbox .leftzone .chk{
+        margin: auto 12px auto 6px;
+        width: 32px;
+        height: 32px;
+        background-color: #FFF;
+        border: solid 1px #CCC;
+        border-radius: 6px;
+    }
+    .intCaptcha_trybox .flexbox .leftzone .delchk{
+        animation: hide 0.25s ease-out;
+        animation-fill-mode: forwards;
+    }
+    @keyframes hide{
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            width: 6px;
+            height: 6px;
+            margin: auto 0px auto 0px;
+        }
+    }
+
+    .intCaptcha_trybox .flexbox .leftzone .loading{
+        margin: auto 12px auto 6px;
+        width: 32px;
+        height: 32px;
+    }
+    .intCaptcha_trybox .flexbox .leftzone .loading p{
+        margin: 0px;
+        text-align: center;
+        font-size: 30px;
+        vertical-align: middle;
+        animation: loadanim 0.5s linear infinite;
+    }
+    @keyframes loadanim{
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .intCaptcha_trybox .flexbox .leftzone h1{
+        margin: 0px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: "Yu Gothic UI","YuGothic",sans-serif;
+        color: #252525;
+    }
+    .intCaptcha_trybox .flexbox .leftzone p{
+        margin: 0px;
+        text-align: left;
+        font-size: 12px;
+        font-weight: normal;
+        font-family: "Yu Gothic UI","YuGothic",sans-serif;
+        color: #333333;
+    }
+    .intCaptcha_trybox .flexbox .rightzone{
+        margin: 0;
+        margin-left: auto;
+        height: fit-content;
+        display: block;
+    }
+    .intCaptcha_trybox .flexbox .rightzone .logo{
+        text-align: center;
+    }
+    .intCaptcha_trybox .flexbox .rightzone .logo img{
+        width: 42px;
+        height: 42px;
+    }
+    .intCaptcha_trybox .flexbox .rightzone h1{
+        margin: 0px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+        font-family: "Yu Gothic UI","YuGothic",sans-serif;
+        color: #333333;
+    }
+    .intCaptcha_trybox .flexbox .rightzone .flexbox{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin: 0px;
+    }
+    .intCaptcha_trybox .flexbox .rightzone .flexbox a{
+        margin: 0px 2px;
+        text-align: center;
+        font-size: 8px;
+        font-weight: normal;
+        font-family: "Yu Gothic UI","YuGothic",sans-serif;
+        color: #333333;
+    }
+</style>
